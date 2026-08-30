@@ -1,0 +1,471 @@
+read
+istore 0
+ldc 0
+iload 0
+isub
+iflt fill_real_0
+ldc 0
+ifeq fill_sentinel_0
+fill_real_0:
+read
+istore 1
+ldc 0
+ifeq after_fill_0
+fill_sentinel_0:
+ldc 1000000000
+istore 1
+after_fill_0:
+ldc 1
+iload 0
+isub
+iflt fill_real_1
+ldc 0
+ifeq fill_sentinel_1
+fill_real_1:
+read
+istore 2
+ldc 0
+ifeq after_fill_1
+fill_sentinel_1:
+ldc 1000000000
+istore 2
+after_fill_1:
+ldc 2
+iload 0
+isub
+iflt fill_real_2
+ldc 0
+ifeq fill_sentinel_2
+fill_real_2:
+read
+istore 3
+ldc 0
+ifeq after_fill_2
+fill_sentinel_2:
+ldc 1000000000
+istore 3
+after_fill_2:
+ldc 3
+iload 0
+isub
+iflt fill_real_3
+ldc 0
+ifeq fill_sentinel_3
+fill_real_3:
+read
+istore 4
+ldc 0
+ifeq after_fill_3
+fill_sentinel_3:
+ldc 1000000000
+istore 4
+after_fill_3:
+ldc 4
+iload 0
+isub
+iflt fill_real_4
+ldc 0
+ifeq fill_sentinel_4
+fill_real_4:
+read
+istore 5
+ldc 0
+ifeq after_fill_4
+fill_sentinel_4:
+ldc 1000000000
+istore 5
+after_fill_4:
+ldc 5
+iload 0
+isub
+iflt fill_real_5
+ldc 0
+ifeq fill_sentinel_5
+fill_real_5:
+read
+istore 6
+ldc 0
+ifeq after_fill_5
+fill_sentinel_5:
+ldc 1000000000
+istore 6
+after_fill_5:
+ldc 6
+iload 0
+isub
+iflt fill_real_6
+ldc 0
+ifeq fill_sentinel_6
+fill_real_6:
+read
+istore 7
+ldc 0
+ifeq after_fill_6
+fill_sentinel_6:
+ldc 1000000000
+istore 7
+after_fill_6:
+iload 1
+iload 2
+isub
+ifgt swap_0_0
+ldc 0
+ifeq noswap_0_0
+swap_0_0:
+iload 1
+istore 8
+iload 2
+istore 1
+iload 8
+istore 2
+noswap_0_0:
+iload 2
+iload 3
+isub
+ifgt swap_0_1
+ldc 0
+ifeq noswap_0_1
+swap_0_1:
+iload 2
+istore 8
+iload 3
+istore 2
+iload 8
+istore 3
+noswap_0_1:
+iload 3
+iload 4
+isub
+ifgt swap_0_2
+ldc 0
+ifeq noswap_0_2
+swap_0_2:
+iload 3
+istore 8
+iload 4
+istore 3
+iload 8
+istore 4
+noswap_0_2:
+iload 4
+iload 5
+isub
+ifgt swap_0_3
+ldc 0
+ifeq noswap_0_3
+swap_0_3:
+iload 4
+istore 8
+iload 5
+istore 4
+iload 8
+istore 5
+noswap_0_3:
+iload 5
+iload 6
+isub
+ifgt swap_0_4
+ldc 0
+ifeq noswap_0_4
+swap_0_4:
+iload 5
+istore 8
+iload 6
+istore 5
+iload 8
+istore 6
+noswap_0_4:
+iload 6
+iload 7
+isub
+ifgt swap_0_5
+ldc 0
+ifeq noswap_0_5
+swap_0_5:
+iload 6
+istore 8
+iload 7
+istore 6
+iload 8
+istore 7
+noswap_0_5:
+iload 1
+iload 2
+isub
+ifgt swap_1_0
+ldc 0
+ifeq noswap_1_0
+swap_1_0:
+iload 1
+istore 8
+iload 2
+istore 1
+iload 8
+istore 2
+noswap_1_0:
+iload 2
+iload 3
+isub
+ifgt swap_1_1
+ldc 0
+ifeq noswap_1_1
+swap_1_1:
+iload 2
+istore 8
+iload 3
+istore 2
+iload 8
+istore 3
+noswap_1_1:
+iload 3
+iload 4
+isub
+ifgt swap_1_2
+ldc 0
+ifeq noswap_1_2
+swap_1_2:
+iload 3
+istore 8
+iload 4
+istore 3
+iload 8
+istore 4
+noswap_1_2:
+iload 4
+iload 5
+isub
+ifgt swap_1_3
+ldc 0
+ifeq noswap_1_3
+swap_1_3:
+iload 4
+istore 8
+iload 5
+istore 4
+iload 8
+istore 5
+noswap_1_3:
+iload 5
+iload 6
+isub
+ifgt swap_1_4
+ldc 0
+ifeq noswap_1_4
+swap_1_4:
+iload 5
+istore 8
+iload 6
+istore 5
+iload 8
+istore 6
+noswap_1_4:
+iload 1
+iload 2
+isub
+ifgt swap_2_0
+ldc 0
+ifeq noswap_2_0
+swap_2_0:
+iload 1
+istore 8
+iload 2
+istore 1
+iload 8
+istore 2
+noswap_2_0:
+iload 2
+iload 3
+isub
+ifgt swap_2_1
+ldc 0
+ifeq noswap_2_1
+swap_2_1:
+iload 2
+istore 8
+iload 3
+istore 2
+iload 8
+istore 3
+noswap_2_1:
+iload 3
+iload 4
+isub
+ifgt swap_2_2
+ldc 0
+ifeq noswap_2_2
+swap_2_2:
+iload 3
+istore 8
+iload 4
+istore 3
+iload 8
+istore 4
+noswap_2_2:
+iload 4
+iload 5
+isub
+ifgt swap_2_3
+ldc 0
+ifeq noswap_2_3
+swap_2_3:
+iload 4
+istore 8
+iload 5
+istore 4
+iload 8
+istore 5
+noswap_2_3:
+iload 1
+iload 2
+isub
+ifgt swap_3_0
+ldc 0
+ifeq noswap_3_0
+swap_3_0:
+iload 1
+istore 8
+iload 2
+istore 1
+iload 8
+istore 2
+noswap_3_0:
+iload 2
+iload 3
+isub
+ifgt swap_3_1
+ldc 0
+ifeq noswap_3_1
+swap_3_1:
+iload 2
+istore 8
+iload 3
+istore 2
+iload 8
+istore 3
+noswap_3_1:
+iload 3
+iload 4
+isub
+ifgt swap_3_2
+ldc 0
+ifeq noswap_3_2
+swap_3_2:
+iload 3
+istore 8
+iload 4
+istore 3
+iload 8
+istore 4
+noswap_3_2:
+iload 1
+iload 2
+isub
+ifgt swap_4_0
+ldc 0
+ifeq noswap_4_0
+swap_4_0:
+iload 1
+istore 8
+iload 2
+istore 1
+iload 8
+istore 2
+noswap_4_0:
+iload 2
+iload 3
+isub
+ifgt swap_4_1
+ldc 0
+ifeq noswap_4_1
+swap_4_1:
+iload 2
+istore 8
+iload 3
+istore 2
+iload 8
+istore 3
+noswap_4_1:
+iload 1
+iload 2
+isub
+ifgt swap_5_0
+ldc 0
+ifeq noswap_5_0
+swap_5_0:
+iload 1
+istore 8
+iload 2
+istore 1
+iload 8
+istore 2
+noswap_5_0:
+ldc 0
+iload 0
+isub
+iflt do_print_0
+ldc 0
+ifeq skip_print_0
+do_print_0:
+iload 1
+print
+skip_print_0:
+ldc 1
+iload 0
+isub
+iflt do_print_1
+ldc 0
+ifeq skip_print_1
+do_print_1:
+iload 2
+print
+skip_print_1:
+ldc 2
+iload 0
+isub
+iflt do_print_2
+ldc 0
+ifeq skip_print_2
+do_print_2:
+iload 3
+print
+skip_print_2:
+ldc 3
+iload 0
+isub
+iflt do_print_3
+ldc 0
+ifeq skip_print_3
+do_print_3:
+iload 4
+print
+skip_print_3:
+ldc 4
+iload 0
+isub
+iflt do_print_4
+ldc 0
+ifeq skip_print_4
+do_print_4:
+iload 5
+print
+skip_print_4:
+ldc 5
+iload 0
+isub
+iflt do_print_5
+ldc 0
+ifeq skip_print_5
+do_print_5:
+iload 6
+print
+skip_print_5:
+ldc 6
+iload 0
+isub
+iflt do_print_6
+ldc 0
+ifeq skip_print_6
+do_print_6:
+iload 7
+print
+skip_print_6:

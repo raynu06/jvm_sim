@@ -1,0 +1,64 @@
+read
+istore 0
+read
+istore 1
+read
+istore 2
+
+iload 0
+istore 3          # min = a
+iload 0
+istore 4          # max = a
+
+# --- if b < min: min = b ---
+iload 1
+iload 3
+isub
+iflt set_min_b
+ldc 0
+ifeq check_max_b
+set_min_b:
+iload 1
+istore 3
+check_max_b:
+
+# --- if b > max: max = b ---
+iload 1
+iload 4
+isub
+ifgt set_max_b
+ldc 0
+ifeq check_min_c
+set_max_b:
+iload 1
+istore 4
+check_min_c:
+
+# --- if c < min: min = c ---
+iload 2
+iload 3
+isub
+iflt set_min_c
+ldc 0
+ifeq check_max_c
+set_min_c:
+iload 2
+istore 3
+check_max_c:
+
+# --- if c > max: max = c ---
+iload 2
+iload 4
+isub
+ifgt set_max_c
+ldc 0
+ifeq print_results
+set_max_c:
+iload 2
+istore 4
+
+print_results:
+iload 3
+print
+iload 4
+print
